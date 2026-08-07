@@ -62,10 +62,10 @@ export default function Home({ posts,photos }) {
           <h1 className="text-5xl font-bold mb-4" style={{ 
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' 
           }}>
-            Hello, call me Zack
+            Hello, call me Zakuan
           </h1>
           <p className="text-xl mb-8" style={{ opacity: 0.9 }}>
-            I am (not yet) a data engineer
+          Data engineer in transition from mechanical engineering, building pipelines end to end
           </p>
         </section>
 
@@ -83,10 +83,11 @@ export default function Home({ posts,photos }) {
             About Me
           </h2>
           <p className="text-lg leading-relaxed" style={{ opacity: 0.9 }}>
-            I hold Master&apos;s Degree in Mechanical Engineering from a university in Japan. <br/>
-            I am currently pursuing a career in data fields, especially data engineering.<br/> 
-            My interests are too many, though mostly revolving around engineering, photography and video games. Though I could and would give my 2 cents about anything really. <br/> 
-            This website is just a collection of things I want to share and remember again if I ever need it. I might write in Japanese if I feel like it ;p
+                I hold Master's Degree in Mechanical Engineering from a university in Japan. <br/>
+                I am currently transitioning into data engieering, building and deploying full pipelines from the ground up rather than just studying the theory.<br/> 
+                My work spans orchestration with Apache Airflow, cloud deployment on AWS, and full stack applications with FastAPI and React.<br/> 
+                I write about what I build, including the parts that did not work the first time. <br/>
+                Outside of engineering, my interests are photography and stocks trading.
           </p>
         </section>
 
@@ -104,7 +105,8 @@ export default function Home({ posts,photos }) {
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Link href="/project3">
+            
+          <Link href="stocks-tracker">
               <div 
                 className="p-6 rounded-2xl transition-all hover:transform hover:-translate-y-2 cursor-pointer"
                 style={{
@@ -112,10 +114,10 @@ export default function Home({ posts,photos }) {
                   borderLeft: '4px solid #4759a9'
                 }}
               >
-                <h3 className="text-xl font-bold mb-3">ETL Pipeline</h3>
-                <p className="mb-4" style={{ opacity: 0.8 }}>ETL pipeline with local and live updates capabilities</p>
+                <h3 className="text-xl font-bold mb-3">Stocks Tracker ETL</h3>
+                <p className="mb-4" style={{ opacity: 0.8 }}>End to end stock price pipeline orchestrated with Apache Airflow, deployed on AWS with a scheduled daily run.</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Python', 'AWS', 'SQL', 'API'].map((tech) => (
+                  {['Python', 'Airflow','PostgreSQL', 'Docker', 'AWS'].map((tech) => (
                     <span 
                       key={tech}
                       className="px-3 py-1 rounded-full text-sm font-medium"
@@ -128,7 +130,7 @@ export default function Home({ posts,photos }) {
               </div>
             </Link>
 
-            <Link href="/project2">
+            <Link href="/receipt-tracker">
               <div 
                 className="p-6 rounded-2xl transition-all hover:transform hover:-translate-y-2 cursor-pointer"
                 style={{
@@ -136,34 +138,10 @@ export default function Home({ posts,photos }) {
                   borderLeft: '4px solid #4759a9'
                 }}
               >
-                <h3 className="text-xl font-bold mb-3">Simple Database Loader</h3>
-                <p className="mb-4" style={{ opacity: 0.8 }}>Simple loader where csv files are loaded into a relational database (sqlite)</p>
+                <h3 className="text-xl font-bold mb-3">Receipt Tracker</h3>
+                <p className="mb-4" style={{ opacity: 0.8 }}>Full stack expense tracking app with a mobile first interface.</p>
                 <div className="flex flex-wrap gap-2">
-                  {['ETL', 'Python', 'SQL', 'Pandas'].map((tech) => (
-                    <span 
-                      key={tech}
-                      className="px-3 py-1 rounded-full text-sm font-medium"
-                      style={{ background: '#667eea', color: 'white' }}
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </Link>
-
-            <Link href="/project1">
-              <div 
-                className="p-6 rounded-2xl transition-all hover:transform hover:-translate-y-2 cursor-pointer"
-                style={{
-                  background: '#030a2e',
-                  borderLeft: '4px solid #4759a9'
-                }}
-              >
-                <h3 className="text-xl font-bold mb-3">CSV Data Pipeline</h3>
-                <p className="mb-4" style={{ opacity: 0.8 }}>Simple loader for csv files: load raw data, clean and save to new csv</p>
-                <div className="flex flex-wrap gap-2">
-                  {['Python', 'Pandas', 'File I/O', 'Basic ETL'].map((tech) => (
+                  {['FastAPI', 'PostgreSQL', 'Docker', 'React'].map((tech) => (
                     <span 
                       key={tech}
                       className="px-3 py-1 rounded-full text-sm font-medium"
@@ -176,6 +154,7 @@ export default function Home({ posts,photos }) {
               </div>
             </Link>
           </div>
+
           <div className="text-center mt-8">
             <Link 
               href="/projects" 

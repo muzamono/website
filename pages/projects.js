@@ -3,6 +3,18 @@ import Link from 'next/link';
 export default function Projects() {
   const projects = [
     {
+      title: "Stocks Tracker ETL",
+      description: "End to end stock price pipeline orchestrated with Apache Airflow, deployed on AWS with a scheduled daily run.",
+      tech: ['Python', 'Airflow','PostgreSQL', 'Docker', 'AWS'],
+      link: "/stocks-tracker"
+    },
+    {
+      title: "Receipt Tracker",
+      description: "Full stack expense tracking app with a mobile first interface.",
+      tech: ['FastAPI', 'PostgreSQL', 'Docker', 'React'],
+      link: "/receipt-tracker"
+    },
+    {
       title: "ETL Pipeline",
       description: "ETL pipeline with local and live updates capabilities",
       tech: ['Python', 'SQL', 'API', 'AWS S3'],
