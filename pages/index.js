@@ -84,7 +84,7 @@ export default function Home({ posts,photos }) {
           </h2>
           <p className="text-lg leading-relaxed" style={{ opacity: 0.9 }}>
                 I hold Master's Degree in Mechanical Engineering from a university in Japan. <br/>
-                I am currently transitioning into data engieering, building and deploying full pipelines from the ground up rather than just studying the theory.<br/> 
+                I am currently transitioning into data engineering, building and deploying full pipelines from the ground up.<br/> 
                 My work spans orchestration with Apache Airflow, cloud deployment on AWS, and full stack applications with FastAPI and React.<br/> 
                 I write about what I build, including the parts that did not work the first time. <br/>
                 Outside of engineering, my interests are photography and stocks trading.
@@ -339,8 +339,8 @@ export default function Home({ posts,photos }) {
           <a href="mailto:m.zakuan7575@gmail.com" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">Email</a>
           <a href="https://www.linkedin.com/in/muhammad-zakuan-2a55a9270" target="_blank" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">LinkedIn</a>
           <a href="https://github.com/muzamono" target="_blank" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">GitHub</a>
+          <a href="/resume/resume.pdf" target="_blank" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium" rel="noopener noreferrer">Resume</a>
         </div>
-        <p>&copy; 2025 muzamono. All rights reserved.</p>
       </footer>
     </div>
   );
