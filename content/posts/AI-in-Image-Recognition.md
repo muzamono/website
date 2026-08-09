@@ -1,7 +1,7 @@
 ---
 title: AI in Image Recognition
 date: 2026-06-18T05:04:14.726Z
-excerpt: AI in Image Recognition
+excerpt: It was around late fall in 2023-24...
 ---
 
 It was around late fall in 2023-24. I was in a small group of visitors to a steel mill of a major steelmaker in Japan and we were ushered towards one of the facilities in the steel-making line. </br>
