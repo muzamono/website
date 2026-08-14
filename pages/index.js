@@ -59,13 +59,13 @@ export default function Home({ posts,photos }) {
           borderRadius: '20px',
           textAlign: 'left'
         }}>
-          <h1 className="text-5xl font-bold mb-4" style={{ 
+          <h1 className="text-4xl font-bold mb-4" style={{ 
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' 
           }}>
-            Hello, call me Zakuan
+            Hey, I'm Zakuan
           </h1>
           <p className="text-xl mb-8" style={{ opacity: 0.9 }}>
-          Data engineer in transition from mechanical engineering, building pipelines end to end
+          I build things, solve problems and enjoy figuring out how things work
           </p>
         </section>
 
@@ -336,7 +336,7 @@ export default function Home({ posts,photos }) {
       >
         <h2 className="text-3xl font-bold mb-6">Let&apos;s Connect</h2>
         <div className="flex justify-center space-x-8 mb-4">
-          <a href="mailto:m.zakuan7575@gmail.com" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">Email</a>
+          <a href="mailto:contact@muzamono.com" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">Email</a>
           <a href="https://www.linkedin.com/in/muhammad-zakuan-2a55a9270" target="_blank" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">LinkedIn</a>
           <a href="https://github.com/muzamono" target="_blank" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">GitHub</a>
           <a href="/resume/resume.pdf" target="_blank" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium" rel="noopener noreferrer">Resume</a>

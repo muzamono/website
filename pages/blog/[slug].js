@@ -1,5 +1,6 @@
 import { getAllPosts, getPostBySlug } from '../../lib/posts';
 import { remark } from 'remark';
+import remarkBreaks from 'remark-breaks';
 import html from 'remark-html';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -146,7 +147,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const post = getPostBySlug(params.slug);
-  const processedContent = await remark().use(html).process(post.content);
+  const processedContent = await remark()
+    .use(remarkBreaks)
+    .use(html)
+    .process(post.content);
   const contentHtml = processedContent.toString();
 
   return {
