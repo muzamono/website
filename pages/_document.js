@@ -11,6 +11,8 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
       <body>
         <Main />
